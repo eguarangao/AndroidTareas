@@ -11,14 +11,14 @@ public class Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
-        //Localizar los controles
+
         TextView mensaje;
         mensaje = findViewById(R.id.txtRMensaje);
 
-        //Recuperamos la información pasada en el intent
+        //Información pasada en el intent
         Bundle bundel = this.getIntent().getExtras();
 
-        //Construimos el mensaje a mostrar
+        //Variable que contendra el msj a mostrar
         String cadena;
 
         if (bundel.getString("genero").equals("Masculino"))
@@ -28,6 +28,7 @@ public class Activity2 extends AppCompatActivity {
 
         cadena += " \n su fecha de nacimiento es: " + bundel.getString("date")
                 + "\n su número de télefono es: " + bundel.getString("phone") + "\n Gracias..!";
+        //Enviamos el msj
         mensaje.setText(cadena);
     }
 }
