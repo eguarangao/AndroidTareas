@@ -26,9 +26,8 @@ public class Activity2 extends AppCompatActivity {
         else
             cadena = "Hola, bienvenida " + bundel.getString("nombre");
 
-        cadena += " su fecha de nacimiento es " + bundel.getString("f_nacimiento")
-                + ", y su número de télefono es: " + bundel.getString("telefono") + " y lo registramos para contactarnos en un futuro próximo. " +
-                "\n\nGracias por su atención y confiar en nosotros.";
+        cadena += " \n su fecha de nacimiento es: " + bundel.getString("date")
+                + "\n su número de télefono es: " + bundel.getString("phone") + "\n Gracias..!";
         mensaje.setText(cadena);
     }
 }

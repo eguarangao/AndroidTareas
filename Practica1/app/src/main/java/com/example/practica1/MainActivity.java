@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,Activity2.class);
         Bundle bundel = new Bundle();
         bundel.putString("nombre",name.getText().toString());
-        bundel.putString("f_nacimiento",date.getText().toString());
+        bundel.putString("date",date.getText().toString());
         bundel.putString("phone",phone.getText().toString());
         if(women.isChecked()){
             bundel.putString("genero",women.getText().toString());
