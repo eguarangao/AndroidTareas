@@ -99,8 +99,9 @@
         android:ems="10"
         android:focusable="false"
         android:inputType="date"
+        android:onClick="vistaCalendar"
         app:layout_constraintStart_toEndOf="@+id/lbFechaN"
-        app:layout_constraintTop_toBottomOf="@+id/rgbGenero" />
+        app:layout_constraintTop_toBottomOf="@+id/rgbGenero"/>
 
     <EditText
         android:id="@+id/edTelefono"
@@ -125,6 +126,18 @@
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/lbNombre"
         app:layout_constraintTop_toBottomOf="@+id/lbTitulo" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="clickBtn"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTelefono" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
